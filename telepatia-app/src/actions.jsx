@@ -1,7 +1,9 @@
 import { ReactMediaRecorder } from "react-media-recorder";
+
 import './App.css'
 
 const RecordView = () => (
+  
   <div>
     <ReactMediaRecorder
       audio
@@ -9,10 +11,10 @@ const RecordView = () => (
         <div>
           <p>{status === "stopped"? "Pausado": ""}</p>
           <p>{status === "recording"? "Grabando": ""}</p>
-          
+
           <p>
             <button onClick={startRecording}>Comenzar Grabación</button>
-            <button onClick={stopRecording} className="stopButton">Detener Grabación</button>
+            <button onClick={stopRecording} className="importantButton">Detener Grabación</button>
           </p>
 
           <audio src={mediaBlobUrl} controls autoPlay />
@@ -20,6 +22,7 @@ const RecordView = () => (
       )}
     />
   </div>
+  
 );
 
 export default RecordView;
