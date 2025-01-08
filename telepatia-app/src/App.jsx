@@ -10,7 +10,7 @@ function App() {
         <h1>Graba tu audio aqui: </h1>
         <RecordView/>
         <hr/>
-        <h3>Cargar archivo</h3>
+        <h1>Cargar archivo</h1>
        <FileUploader/>
       </div>
     </>

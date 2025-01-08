@@ -54,7 +54,7 @@ const FileUploader = () => {
 
   return (
     <div>
-      <h1>Subir archivo al bucket</h1>
+      <h3>Subir archivo al bucket</h3>
       <input type="file" onChange={handleFileChange} />
       <button onClick={handleUpload} className="importantButton">
         Subir archivo
